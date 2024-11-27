@@ -9,8 +9,8 @@ def generate_sample_space(components: Iterable[Component], sample_count: int) ->
 
 if __name__ == "__main__":
 
-    # A preconstructed and unordered set of components has been created. The numbering of said components
-    # corresponds to that of the diagram provided in Case Study 1, Question 1.
+    # A preconstructed and unordered set of components has been created. Each exhibits parameters and
+    # optional sample space definitions.
 
     components: Set[Component] = {
         Component(
@@ -32,7 +32,7 @@ if __name__ == "__main__":
 
 
     # Each component is computed in the following loop.
-    # The implementation of your ordering algorithm required by Case Study 1, Question 1 will be showcased
+    # The implementation of your sampling algorithm required by Case Study 2, Question 1 will be showcased
     # here.
 
     sample_space: List[Set[Component]] = generate_sample_space(components=components)
